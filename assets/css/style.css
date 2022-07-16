@@ -1,0 +1,167 @@
+/* main body component styling */
+.body-search-row{
+    margin-top: 20px;
+}
+.body-search-row .search-field{
+    position: relative;
+}
+.body-search-row .search-field img{
+    width: 18px;
+    position: absolute;
+    right: 18px;
+    top: 10px;
+}
+.body-search-row .search-field .form-control{
+    background-color: var(--input-dark-bg);
+    color: var(--input-dark-txt);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.body-search-row .right{
+    font-size: 18px;
+}
+.body-search-row .right .light{
+    color: var(--input-dark-txt);
+}
+.body-search-row .right .not-img{
+    width: 25px;
+}
+.body-search-row .right .store-logo{
+    width: 40px;
+}
+.orview-row select{
+    background-color: var(--body-color);
+}
+.latest-summary .card-main,
+.main-body .reaches-row .card-main,
+.main-body .right.feedback .card-main{
+    padding: 30px;
+    background-color: var(--white);
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.latest-summary .card-main .card-img{
+    width: 15px;
+}
+.latest-summary .card-main .card,
+.main-body .reaches-row .card-main .card{
+    padding: 10px;
+    color: var(--white);
+    margin-top: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.latest-summary .card-main .card .numbers{
+    font-size: 35px;
+}
+.latest-summary .card-main .blue-card,
+.main-body .reaches-row .card-main .blue-card{
+    background-color: var(--blue);
+}
+.latest-summary .card-main .red-card,
+.main-body .reaches-row .card-main .red-card{
+    background-color: var(--red);
+}
+.latest-summary .card-main .white-card,
+.main-body .reaches-row .card-main .white-card{
+    color: var(--black);
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+}
+.card-main.right{
+    padding: 30px;
+    padding-bottom: 5px;
+}
+.card-main.right .thumb{
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.card-main.right .like{
+    border: 2px solid var(--green);
+}
+.card-main.right .unlike{
+    border: 2px solid var(--red);
+}
+.card-main.right .percent{
+    font-size: 24px;
+}
+.card-main.right .like-img{
+    width: 25px;
+}
+.main-body .reaches-row .card-main .card{
+    min-width: 105px;
+    max-width: 105px;
+}
+.main-body .reaches-row .card-main .card-img{
+    width: 12px;
+}
+.main-body .reaches-row .card-main .title{
+    font-size: 12px;
+}
+.main-body .reaches-row .card-main .yellow-card{
+    background-color: var(--orange);
+}
+.main-body .reaches-row .card-main .light-red-card{
+    background-color: var(--red);
+}
+.main-body .reaches-row .card-main .purple-card{
+    background-color: var(--purple);
+}
+.main-body .reaches-row .card-main .green-card{
+    background-color: var(--green);
+}
+.main-body .reaches-row .card-main .light-blue-card{
+    background-color: var(--light-blue);
+}
+.main-body .right.feedback .card-main .like-img{
+    width: 20px;
+}
+.main-body .right.feedback .card-main .light-color{
+    font-size: 12px;
+}
+.main-body .right.feedback .card-main .starts{
+    color: var(--orange);
+}
+
+@media (min-width:768px) AND (max-width:990px){
+    .latest-summary .card-main .card .title{
+        font-size: 11px;
+    }
+    .latest-summary .card-main .card .numbers{
+        font-size: 27px;
+    }
+    .card-main.right .light-color{
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (min-width:990px) AND (max-width:1200px){
+    .latest-summary .card-main .card .title{
+        font-size: 11px;
+    }
+    .latest-summary .card-main .card .numbers{
+        font-size: 24px;
+    }
+    .card-main.right .light-color{
+        font-size: 12px;
+        margin-bottom: 2px;
+    }
+}
