@@ -1,11 +1,11 @@
-const $button  = document.querySelector('#sidebar-toggle');
+const $button = document.querySelector('#sidebar-toggle');
 const $wrapper = document.querySelector('#wrapper');
 
 $button.addEventListener('click', (e) => {
   e.preventDefault();
   $wrapper.classList.toggle('toggled');
 });
-const $buttonb  = document.querySelector('#sidebar-toggle-inner');
+const $buttonb = document.querySelector('#sidebar-toggle-inner');
 
 $buttonb.addEventListener('click', (e) => {
   e.preventDefault();
@@ -15,22 +15,64 @@ $buttonb.addEventListener('click', (e) => {
 
 
 // bar graph
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ["M", "T", "W", "T", "F", "S", "S"],
-    datasets: [{
-      label: 'apples',
-      data: [5000, 100, 500],
-      backgroundColor: "rgba(153,255,51,1)"
-    }, {
-      label: 'oranges',
-      data: [4000, 3500, 400],
-      backgroundColor: "rgba(255,153,0,1)"
-    }]
+
+const imgPath = "E:/testings/saha/sahaa-dashboard/assets/images";
+const data = {
+  labels: ['Calls', 'Email', 'Messenger', 'Whatsapp', 'Website'],
+  datasets: [
+    {
+    barThickness: 35,
+    label: 'Week of May 13, 2022 Clicks',
+    data: [100, 500, 50, 300 , 400],
+    backgroundColor: ['#d07503', '#FA254C', '#8C2BFC', '#25C966' ,'#2479FF'],
+    borderWidth: 1
   }
-});
+]
+};
 
+// config 
+const config = {
+  type: 'bar',
+  data,
+  options: {
+    plugins: {
+      labels: {
+        render: 'image',
+        images: [
+          {
+          src: imgPath + "/Call - Color.svg",
+          width: 25,
+          height: 25
+        },
+        {
+          src: imgPath + "/Email - Color.svg",
+          width: 25,
+          height: 25
+        },
+        {
+          src: imgPath + "/Messenger - Color.svg",
+          width: 25,
+          height: 25
+        },
+        {
+          src: imgPath + "/Whatsapp - Color.svg",
+          width: 25,
+          height: 25
+        },
+        {
+          src: imgPath + "/Website - Color.svg",
+          width: 25,
+          height: 25
+        }
+      ]
+      }
+    },
 
+  }
+};
 
+// render init block
+const myChart = new Chart(
+  document.getElementById('myChart'),
+  config
+);

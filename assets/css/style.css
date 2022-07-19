@@ -143,6 +143,18 @@
 .main-body .right.feedback .card-main .starts{
     color: var(--orange);
 }
+/* bar graph */
+.bar-graph{
+    background-color: var(--white);
+    padding: 30px;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
 
 @media (min-width:768px) AND (max-width:990px){
     .latest-summary .card-main .card .title{
@@ -167,5 +179,21 @@
     .card-main.right .light-color{
         font-size: 12px;
         margin-bottom: 2px;
+    }
+}
+
+
+@media (min-width:1500px){
+    /* reaches clicks cards */
+    .main-body .reaches-row .card-main .card{
+        min-width: 120px;
+        max-width: 120px;
+    }
+}
+@media (min-width:1700px){
+    /* reaches clicks cards */
+    .main-body .reaches-row .card-main .card{
+        min-width: 140px;
+        max-width: 140px;
     }
 }

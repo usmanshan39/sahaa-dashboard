@@ -85,11 +85,11 @@
 
 @media (min-width: 990px) AND (max-width:1399px) {
     #wrapper {
-        padding-left: 300px;
+        padding-left: 270px;
     }
 
     #sidebar-wrapper {
-        width: 300px;
+        width: 270px;
     }
 
     #content-wrapper {
