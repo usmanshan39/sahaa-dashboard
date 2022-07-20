@@ -109,7 +109,38 @@
     padding: 4px 10px;
     color: var(--input-dark-txt);
     font-size: 14px;
+    box-shadow: none;
+    outline: none;
 }
+
+/* view leads modal section */
+.leads-modal .modal-content{
+    padding: 30px;
+}
+.leads-modal label{
+    font-size: 18px;
+}
+.leads-modal .form-control,
+.leads-modal  .form-select{
+    padding:0.675rem 0.75rem;
+}
+.save-btn{
+    background-color: var(--main-orange);
+    color: var(--white);
+}
+.save-btn:hover{
+    color: var(--white);
+}
+.close-btn{
+    border: 1px solid var(--main-orange);
+    color: var(--main-orange);
+}
+.close-btn:hover{
+    color: var(--main-orange);
+}
+
+
+
 
 @media (max-width:500px){
 
