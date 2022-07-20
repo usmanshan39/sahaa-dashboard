@@ -127,9 +127,7 @@
                 <div class="row">
                     <div class="col-6 col-sm-6 col-md-6 col-lg-5">
                         <div class="d-flex align-items-center">
-                            <h4 class="me-2 me-lg-5 m-0">Leads</h4>
-                            <button class="btn main-round-btn ms-0 ms-lg-5" data-bs-toggle="modal"
-                                data-bs-target="#viewLeadModal">Add lead <i class="fa fa-plus ps-2"></i></button>
+                            <h4 class="me-2 me-lg-5 m-0">Closings</h4>
                         </div>
                     </div>
                     <div class="col-6 col-sm-6 col-md-6 col-lg-7">
@@ -162,26 +160,11 @@
                                         data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all"
                                         aria-selected="true">All </button>
                                 </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-channels-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-channel" type="button" role="tab"
-                                        aria-controls="pills-channel" aria-selected="false">Added by Channels </button>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-you-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-you" type="button" role="tab" aria-controls="pills-you"
-                                        aria-selected="false">Added by You</button>
-                                </li>
                             </ul>
                         </div>
                         <div class="col-12 col-md-4 col-lg-4 col-xl-6 col-xxl-7 mt-2 mt-md-0">
-                            <div class="filter d-flex align-items-center float-start float-md-end">
-                                <i class="fa fa-bars me-1" aria-hidden="true"></i>
-                                <h3 class="m-0">Filter</h3>
-                                <select class="ms-1 form-select">
-                                    <option>Closed</option>
-                                    <option>Open</option>
-                                </select>
+                            <div class="filter float-start float-md-end">
+                                <h3 class="m-0">15 Closings</h3>
                             </div>
                         </div>
                     </div>
@@ -195,8 +178,8 @@
                                     <thead>
                                         <tr>
                                             <th>Source Of Lead <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>Date <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>Interests <i class="fa fa-caret-down ps-2"></i></th>
+                                            <th>Closing Date <i class="fa fa-caret-down ps-2"></i></th>
+                                            <th>Client Name <i class="fa fa-caret-down ps-2"></i></th>
                                             <th>City <i class="fa fa-caret-down ps-2"></i></th>
                                             <th>Status <i class="fa fa-caret-down ps-2"></i></th>
                                             <th></th>
@@ -228,7 +211,7 @@
                                             </td>
                                             <td>
                                                 <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
+                                                <button class="btn closed-btn">Closed</button>
                                             </td>
                                             <td>
                                                 <div class="ms-4 dots">
@@ -274,7 +257,7 @@
                                             </td>
                                             <td>
                                                 <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
+                                                <button class="btn closed-btn">Closed</button>
                                             </td>
                                             <td>
                                                 <div class="ms-4 dots">
@@ -320,7 +303,7 @@
                                             </td>
                                             <td>
                                                 <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
+                                                <button class="btn closed-btn">Closed</button>
                                             </td>
                                             <td>
                                                 <div class="ms-4 dots">
@@ -366,7 +349,7 @@
                                             </td>
                                             <td>
                                                 <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
+                                                <button class="btn closed-btn">Closed</button>
                                             </td>
                                             <td>
                                                 <div class="ms-4 dots">
@@ -412,366 +395,7 @@
                                             </td>
                                             <td>
                                                 <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
-                                            </td>
-                                            <td>
-                                                <div class="ms-4 dots">
-                                                    <i class="btn fa fa-ellipsis-h dots-btn"></i>
-                                                    <div class="action-col d-none">
-                                                        <ul>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#viewLeadModal">View</button>
-                                                            </li>
-                                                            <hr>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#updateLeadModal">update</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-channel" role="tabpanel"
-                            aria-labelledby="pills-channels-tab">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Source Of Lead <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>Date <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>Interests <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>City <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>Status <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="img-col">
-                                                    <div class="row gx-3 gx-md-0">
-                                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                                                            <img src="assets/images/user.png" class="user-img">
-                                                        </div>
-                                                        <div class="col-12 col-md-8 col-lg-9 col-xl-9 col-xxl-10">
-                                                            <h3 class="main-title mt-1">Sourced Person</h3>
-                                                            <h3 class="light-color">Sourced Channel</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h3>21/06/2022</h3>
-                                            </td>
-                                            <td>
-                                                <h3>Digital Marketing</h3>
-                                            </td>
-                                            <td>
-                                                <h3>DUBAI</h3>
-                                            </td>
-                                            <td>
-                                                <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
-                                            </td>
-                                            <td>
-                                                <div class="ms-4 dots">
-                                                    <i class="btn fa fa-ellipsis-h dots-btn"></i>
-                                                    <div class="action-col d-none">
-                                                        <ul>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#viewLeadModal">View</button>
-                                                            </li>
-                                                            <hr>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#updateLeadModal">update</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="img-col">
-                                                    <div class="row gx-3 gx-md-0">
-                                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                                                            <img src="assets/images/user.png" class="user-img">
-                                                        </div>
-                                                        <div class="col-12 col-md-8 col-lg-9 col-xl-9 col-xxl-10">
-                                                            <h3 class="main-title mt-1">Sourced Person</h3>
-                                                            <h3 class="light-color">Sourced Channel</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h3>21/06/2022</h3>
-                                            </td>
-                                            <td>
-                                                <h3>Digital Marketing</h3>
-                                            </td>
-                                            <td>
-                                                <h3>DUBAI</h3>
-                                            </td>
-                                            <td>
-                                                <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
-                                            </td>
-                                            <td>
-                                                <div class="ms-4 dots">
-                                                    <i class="btn fa fa-ellipsis-h dots-btn"></i>
-                                                    <div class="action-col d-none">
-                                                        <ul>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#viewLeadModal">View</button>
-                                                            </li>
-                                                            <hr>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#updateLeadModal">update</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="img-col">
-                                                    <div class="row gx-3 gx-md-0">
-                                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                                                            <img src="assets/images/user.png" class="user-img">
-                                                        </div>
-                                                        <div class="col-12 col-md-8 col-lg-9 col-xl-9 col-xxl-10">
-                                                            <h3 class="main-title mt-1">Sourced Person</h3>
-                                                            <h3 class="light-color">Sourced Channel</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h3>21/06/2022</h3>
-                                            </td>
-                                            <td>
-                                                <h3>Digital Marketing</h3>
-                                            </td>
-                                            <td>
-                                                <h3>DUBAI</h3>
-                                            </td>
-                                            <td>
-                                                <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
-                                            </td>
-                                            <td>
-                                                <div class="ms-4 dots">
-                                                    <i class="btn fa fa-ellipsis-h dots-btn"></i>
-                                                    <div class="action-col d-none">
-                                                        <ul>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#viewLeadModal">View</button>
-                                                            </li>
-                                                            <hr>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#updateLeadModal">update</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="img-col">
-                                                    <div class="row gx-3 gx-md-0">
-                                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                                                            <img src="assets/images/user.png" class="user-img">
-                                                        </div>
-                                                        <div class="col-12 col-md-8 col-lg-9 col-xl-9 col-xxl-10">
-                                                            <h3 class="main-title mt-1">Sourced Person</h3>
-                                                            <h3 class="light-color">Sourced Channel</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h3>21/06/2022</h3>
-                                            </td>
-                                            <td>
-                                                <h3>Digital Marketing</h3>
-                                            </td>
-                                            <td>
-                                                <h3>DUBAI</h3>
-                                            </td>
-                                            <td>
-                                                <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
-                                            </td>
-                                            <td>
-                                                <div class="ms-4 dots">
-                                                    <i class="btn fa fa-ellipsis-h dots-btn"></i>
-                                                    <div class="action-col d-none">
-                                                        <ul>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#viewLeadModal">View</button>
-                                                            </li>
-                                                            <hr>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#updateLeadModal">update</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="pills-you" role="tabpanel" aria-labelledby="pills-you-tab">
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th>Source Of Lead <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>Date <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>Interests <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>City <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th>Status <i class="fa fa-caret-down ps-2"></i></th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <div class="img-col">
-                                                    <div class="row gx-3 gx-md-0">
-                                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                                                            <img src="assets/images/user.png" class="user-img">
-                                                        </div>
-                                                        <div class="col-12 col-md-8 col-lg-9 col-xl-9 col-xxl-10">
-                                                            <h3 class="main-title mt-1">Sourced Person</h3>
-                                                            <h3 class="light-color">Sourced Channel</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h3>21/06/2022</h3>
-                                            </td>
-                                            <td>
-                                                <h3>Digital Marketing</h3>
-                                            </td>
-                                            <td>
-                                                <h3>DUBAI</h3>
-                                            </td>
-                                            <td>
-                                                <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
-                                            </td>
-                                            <td>
-                                                <div class="ms-4 dots">
-                                                    <i class="btn fa fa-ellipsis-h dots-btn"></i>
-                                                    <div class="action-col d-none">
-                                                        <ul>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#viewLeadModal">View</button>
-                                                            </li>
-                                                            <hr>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#updateLeadModal">update</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="img-col">
-                                                    <div class="row gx-3 gx-md-0">
-                                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                                                            <img src="assets/images/user.png" class="user-img">
-                                                        </div>
-                                                        <div class="col-12 col-md-8 col-lg-9 col-xl-9 col-xxl-10">
-                                                            <h3 class="main-title mt-1">Sourced Person</h3>
-                                                            <h3 class="light-color">Sourced Channel</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h3>21/06/2022</h3>
-                                            </td>
-                                            <td>
-                                                <h3>Digital Marketing</h3>
-                                            </td>
-                                            <td>
-                                                <h3>DUBAI</h3>
-                                            </td>
-                                            <td>
-                                                <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
-                                            </td>
-                                            <td>
-                                                <div class="ms-4 dots">
-                                                    <i class="btn fa fa-ellipsis-h dots-btn"></i>
-                                                    <div class="action-col d-none">
-                                                        <ul>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#viewLeadModal">View</button>
-                                                            </li>
-                                                            <hr>
-                                                            <li>
-                                                                <button class="btn" data-bs-toggle="modal"
-                                                                    data-bs-target="#updateLeadModal">update</button>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <div class="img-col">
-                                                    <div class="row gx-3 gx-md-0">
-                                                        <div class="col-12 col-md-4 col-lg-3 col-xl-3 col-xxl-2">
-                                                            <img src="assets/images/user.png" class="user-img">
-                                                        </div>
-                                                        <div class="col-12 col-md-8 col-lg-9 col-xl-9 col-xxl-10">
-                                                            <h3 class="main-title mt-1">Sourced Person</h3>
-                                                            <h3 class="light-color">Sourced Channel</h3>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <h3>21/06/2022</h3>
-                                            </td>
-                                            <td>
-                                                <h3>Digital Marketing</h3>
-                                            </td>
-                                            <td>
-                                                <h3>DUBAI</h3>
-                                            </td>
-                                            <td>
-                                                <h3 class="light-color">21/06/2022</h3>
-                                                <button class="btn active-btn">Active</button>
+                                                <button class="btn closed-btn">Closed</button>
                                             </td>
                                             <td>
                                                 <div class="ms-4 dots">
@@ -813,7 +437,7 @@
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="text-center">
-                <h4 class="modal-title">View Lead</h3>
+                <h4 class="modal-title">View Closing</h4>
             </div>
             <div class="modal-body">
                 <form>
@@ -859,20 +483,31 @@
     </div>
 </div>
 <!-- update lead -->
-<div class="leads-modal modal fade" id="updateLeadModal" tabindex="-1" aria-labelledby="updateLeadModalLabel"
-    aria-hidden="true">
+<div class="leads-modal update-modal modal fade" id="updateLeadModal" tabindex="-1"
+    aria-labelledby="updateLeadModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable">
         <div class="modal-content">
             <div class="text-center">
-                <h4 class="modal-title">UPDATE LEAD</h3>
+                <h4 class="modal-title">UPDATE Closing</h4>
             </div>
             <div class="modal-body">
                 <div class="form-group mt-2">
-                    <label for="interest" class="mb-2">Status</label>
+                    <label for="interest" class="mb-2">Payment Terms</label>
                     <select class="form-select">
-                        <option>Not Interested</option>
-                        <option>Interested</option>
+                        <option>1</option>
+                        <option>2</option>
                     </select>
+                </div>
+                <div class="form-group mt-3">
+                    <label class="control-label mb-2">Upload Receipt</label>
+                    <div class="dropzone-wrapper">
+                        <div class="dropzone-desc">
+                            <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+                            <p class="m-0">Select 1 file or drag here</p>
+                            <button class="btn select-btn mt-1">Select a file</button>
+                        </div>
+                        <input type="file" name="img_logo" class="dropzone">
+                    </div>
                 </div>
                 <div class="form-group mt-3">
                     <label for="comment" class="mb-2">Comment Box</label>
@@ -883,7 +518,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 

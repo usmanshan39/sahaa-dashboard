@@ -1,3 +1,4 @@
+// sidebar
 const $button = document.querySelector('#sidebar-toggle');
 const $wrapper = document.querySelector('#wrapper');
 
@@ -17,7 +18,54 @@ $buttonb.addEventListener('click', (e) => {
 $(".dots-btn").on("click", function(e){
   e.preventDefault();
   let children =  $(this).siblings(".action-col").toggleClass("d-none");
-})
+});
+
+
+// for closing image upload
+
+function readFile(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+
+    reader.onload = function(e) {
+      var htmlPreview =
+        '<img width="200" src="' + e.target.result + '" />' +
+        '<p>' + input.files[0].name + '</p>';
+      var wrapperZone = $(input).parent();
+
+      wrapperZone.removeClass('dragover');
+      previewZone.removeClass('hidden');
+      boxZone.empty();
+      boxZone.append(htmlPreview);
+    };
+
+    reader.readAsDataURL(input.files[0]);
+  }
+}
+
+function reset(e) {
+  e.wrap('<form>').closest('form').get(0).reset();
+  e.unwrap();
+}
+
+$(".dropzone").change(function() {
+  readFile(this);
+});
+
+$('.dropzone-wrapper').on('dragover', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $(this).addClass('dragover');
+});
+
+$('.dropzone-wrapper').on('dragleave', function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  $(this).removeClass('dragover');
+});
+
+
+
 
 
 // bar graph
