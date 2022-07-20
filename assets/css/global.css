@@ -39,6 +39,20 @@ body{
 .mt-20{
     margin-top: 20px;
 }
+.main-round-btn{
+    background-color: var(--main-orange);
+    color: #fff;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+@media(max-width:768px){
+    .main-round-btn{
+        font-size: 12px;
+    }
+}
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -58,17 +72,3 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
-
-/* ::-webkit-scrollbar {
-    width: 11px;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #DBE2ED;
-    border-radius: 6px;
-    border: 3px solid transparent;
-} */

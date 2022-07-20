@@ -1,0 +1,120 @@
+.main-form-outer{
+    padding: 40px;
+    background-color: #fff;
+    box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+/* filter tabs row */
+.pills-tab{
+    border-bottom: 1px solid var(--input-dark-txt);
+}
+.pills-tab .nav-link{
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--input-dark-txt);
+}
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: transparent;
+    color: var(--black);
+    border-bottom: 2px solid var(--main-orange);
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+.filter{
+    padding: 8px 16px;
+    padding-left: 0;
+}
+.filter i{
+    color: var(--main-orange);
+}
+.filter h3{
+    font-size: 17px;
+    color: var(--black);
+}
+.filter select{
+    font-size: 14px;
+    padding: .15rem 2.0rem .15rem .75rem;
+    border-color:var(--input-dark-bg);
+    color: var(--input-dark-txt);
+}
+
+/* main table section */
+.table-sec thead{
+    color: var(--input-dark-txt);
+    font-size: 17px;
+    font-weight: 500;
+    border-color:  var(--input-dark-txt);
+}
+.table-sec th{
+    padding: 20px 0px !important;
+    font-size: 17px;
+    font-weight: 500;
+}
+.table-sec td{
+    padding: 20px 0px !important;
+}
+.table-sec .img-col .user-img{
+    width: 50px;
+    height: 50px;
+}
+.table-sec h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+.actve-btn{
+    border: 1px solid var(--main-orange);
+    color: var(--main-orange);
+    width: 100px;
+}
+.actve-btn:hover{
+    color: var(--main-orange);
+}
+.table-sec .dots i{
+    color: var(--input-dark-txt);
+    font-size: 22px;
+}
+.table-sec .dots{
+    position: relative
+}
+.table-sec .action-col{
+    position: absolute;
+    right: 70px;
+    top: 20px;
+}
+.table-sec .action-col ul{
+    list-style-type: none;
+    padding-left: 0;
+    background-color: var(--body-color);
+    margin: 0;
+}
+.table-sec .action-col ul .btn{
+    padding: 4px 10px;
+    color: var(--input-dark-txt);
+    font-size: 14px;
+}
+
+@media (max-width:500px){
+
+    /* filter tabs row */
+    .main-form-outer{
+        padding: 20px;
+    }
+    .nav-pills{
+        font-size: 14px;
+    }
+    .nav-pills .nav-link{
+        padding: 3px;
+        font-size: 14px;
+    }
+    .filter h3{
+        font-size: 14px;
+    }
+}
