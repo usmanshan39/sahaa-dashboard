@@ -95,7 +95,7 @@
 }
 .table-sec .action-col{
     position: absolute;
-    right: 120px;
+    right: 42%;
     top: 25px;
 }
 .table-sec .action-col ul{
@@ -239,5 +239,10 @@
     }
     .filter h3{
         font-size: 14px;
+    }
+}
+@media (min-width:1600px){
+    .table-sec .action-col{
+        right: 75%;
     }
 }
