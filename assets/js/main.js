@@ -16,14 +16,15 @@ $buttonb.addEventListener('click', (e) => {
 
 // bar graph
 
-const imgPath = "E:/testings/saha/sahaa-dashboard/assets/images";
+// const imgPath = "E:/testings/saha/sahaa-dashboard/assets/images";
+const imgPath = "D:/fiverr/sahaa-dashboard/assets/images";
 const data = {
   labels: ['Calls', 'Email', 'Messenger', 'Whatsapp', 'Website'],
   datasets: [
     {
     barThickness: 35,
     label: 'Week of May 13, 2022 Clicks',
-    data: [100, 500, 50, 300 , 400],
+    data: [100, 350, 50, 300 , 400],
     backgroundColor: ['#d07503', '#FA254C', '#8C2BFC', '#25C966' ,'#2479FF'],
     borderWidth: 1
   }
