@@ -13,6 +13,12 @@ $buttonb.addEventListener('click', (e) => {
 });
 
 
+// for leads button display when click on dots
+$(".dots-btn").on("click", function(e){
+  e.preventDefault();
+  let children =  $(this).siblings(".action-col").toggleClass("d-none");
+})
+
 
 // bar graph
 

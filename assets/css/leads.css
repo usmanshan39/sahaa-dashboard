@@ -82,17 +82,27 @@
     font-size: 22px;
 }
 .table-sec .dots{
-    position: relative
+    position: relative;
+    cursor: pointer;
 }
 .table-sec .action-col{
     position: absolute;
-    right: 70px;
-    top: 20px;
+    right: 120px;
+    top: 25px;
 }
 .table-sec .action-col ul{
     list-style-type: none;
-    padding-left: 0;
+    padding: 0px 12px;
     background-color: var(--body-color);
+    margin: 0;
+    box-shadow: 0 3px 4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.table-sec .action-col hr{
     margin: 0;
 }
 .table-sec .action-col ul .btn{
