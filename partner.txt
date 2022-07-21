@@ -1,0 +1,72 @@
+<div class="col-md-6 mt-3 mt-md-0">
+                                        <div class="center-card">
+                                            <div class="d-flex align-items-start justify-content-between mb-2">
+                                                <div>
+                                                    <h3 class="m-0 main-heading">GATEWAY INTERIORS LLC LLC LLC</h3>
+                                                    <p class="m-0"> Taste is above all this |</p>
+                                                </div>
+                                                <img src="assets/images/verified.png" class="ver-img ms-3">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 col-xl-12 col-xxl-6 mt-4">
+                                                    <div
+                                                        class="social-icons d-flex align-items-center justify-content-between">
+                                                        <img src="assets/images/Whatsapp - Color.svg"
+                                                            class="icon-img"></a>
+                                                        <a href="#"><img src="assets/images/Call - Color.svg"
+                                                                class="icon-img"></a>
+                                                        <a href="#"><img src="assets/images/Email - Color.svg"
+                                                                class="icon-img"></a>
+                                                        <a href="#"><img src="assets/images/Messenger - Color.svg"
+                                                                class="icon-img"></a>
+                                                        <a href="#"><img src="assets/images/Website - Color.svg"
+                                                                class="icon-img"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12 col-xl-12 col-xxl-6 mt-4">
+                                                    <button class="btn partner-btn-hire" data-bs-toggle="modal"
+                                                        data-bs-target="#hirePartnerModal">Hire a partner</button>
+                                                    <button class="btn partner-btn-refresh">Refresh a partner</button>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-12 mt-4">
+                                                    <p class="location"><i class="fa fa-map-marker me-2"></i>
+                                                        <b>2.3 mi</b> | Co-operative Buildingal WahdaAl Nahda 1Sharjah
+                                                    </p>
+                                                    <p><i class="fa fa-clock me-2"></i>
+                                                        <b class="main-color">Open</b> Close at 21:00</p>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-6 mt-4">
+                                                    <ul>
+                                                        <li>Car Rental</li>
+                                                        <li>Tickting</li>
+                                                        <li>Visa Service</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-6 mt-4">
+                                                    <ul>
+                                                        <li>Car Rental</li>
+                                                        <li>Tickting</li>
+                                                        <li>Visa Service</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="row center-footer mt-4">
+                                                <div class="col-md-4">
+                                                    <a href="">Give us Review</a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#">Add to Favourite <i class="fa fa-heart"></i></a>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <a href="#">Report</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mt-3 mt-md-0">
+                                        <img src="assets/images/card_right.jpg" class="img-fluid">
+                                    </div>
