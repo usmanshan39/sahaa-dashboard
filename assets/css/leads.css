@@ -443,10 +443,29 @@
     color: var(--black);
 }
 
-
-
-
-
+/* pagination for all pages */
+.pagination-bar .pagination-ul{
+    list-style-type: none;
+    display: flex;
+}
+.pagination-bar .pagination-ul li{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--input-dark-bg);
+    margin: 5px;
+}
+.pagination-bar .pagination-ul li.lines{
+    background-color: transparent;
+}
+.pagination-bar .pagination-ul li.active,
+.pagination-bar .pagination-ul li:hover{
+    background-color: var(--main-orange);
+    color: var(--white);
+    transition-duration: 0.3s;
+}
 
 @media (max-width:500px) {
 
