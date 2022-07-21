@@ -24,6 +24,9 @@ html {
 .light-color{
     color: var(--input-dark-txt) !important;
 }
+.main-color{
+    color: var(--main-orange);
+}
 h4{
     font-size: 22px;
 }
