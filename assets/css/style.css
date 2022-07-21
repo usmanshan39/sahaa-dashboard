@@ -156,6 +156,9 @@
     -o-border-radius: 10px;
 }
 
+/* partner page */
+
+
 @media (max-width:768px){
     .orview-row h4.light-color{
         width: 100px;
@@ -205,3 +208,4 @@
         max-width: 140px;
     }
 }
+
