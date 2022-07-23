@@ -302,59 +302,12 @@
     color: var(--white);
 }
 
-/* partner card section */
-.partner-card-outer {
-    margin-top: 50px;
-    background-color: var(--body-color);
-    padding: 10px;
-}
 
-.partner-card-outer .left-card .left-card-header {
-    position: relative;
-}
-
-.partner-card-outer .left-card .left-card-header .left-stars {
-    position: absolute;
-    bottom: -30px;
-    left: 0;
-    right: 0;
-}
-
-.partner-card-outer .left-card .left-card-header .left-stars .inner .left-img,
-.partner-card-outer .left-card .left-card-header .left-stars .inner .right-img {
-    width: 15%;
-}
-
-.partner-card-outer .left-card .left-card-header .left-stars .inner .center-img {
-    width: 22%;
-}
-
-.partner-card-outer .left-card .left-card-header .left-stars .inner p {
-    font-size: 40%;
-}
-
-.partner-card-outer .left-card .left-card-header .left-stars .inner {
-    background-color: var(--white);
-    padding: 3px 9px;
-    width: 50%;
-    margin: auto;
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-}
-
-.partner-card-outer .left-card .left-card-body {
-    background-color: #FFEEDE;
-    padding: 50px 0px 30px;
-}
-
-.partner-card-outer .left-card .left-card-body .slider-content .user-sec {
+.left-card-body .slider-content .user-sec {
     margin: auto;
 }
 
-.partner-card-outer .left-card .left-card-body .slider-content .user-sec .heading-user {
+.left-card-body .slider-content .user-sec .heading-user {
     background-color: var(--input-dark-bg);
     width: 50px;
     height: 50px;
@@ -371,77 +324,31 @@
     -o-border-radius: 50%;
 }
 
-.partner-card-outer .left-card .left-card-body .slider-content .user-sec p {
+.left-card-body .slider-content .user-sec p {
     font-size: 12px;
     margin: 0;
 }
 
-.partner-card-outer .left-card .carousel-control-next,
-.partner-card-outer .left-card .carousel-control-prev {
+.carousel-control-next,
+.carousel-control-prev {
     color: blue !important;
 }
 
-.partner-card-outer .left-card .left-card-body .slider-content .star-sec {
+.left-card-body .slider-content .star-sec {
     padding: 20px;
 }
 
-.partner-card-outer .left-card .left-card-body .slider-content .star-sec .fa {
+.left-card-body .slider-content .star-sec .fa {
     color: var(--main-orange);
     font-size: 70%;
 }
 
-.partner-card-outer .left-card .left-card-body .slider-content .star-sec .star-text {
+.left-card-body .slider-content .star-sec .star-text {
     font-size: 70%;
 }
 
-/* partner center card */
 
-.partner-card-outer .center-card .main-heading {
-    font-size: 22px;
-    font-weight: 800;
-}
 
-.partner-card-outer .center-card .ver-img {
-    width: 120px;
-}
-
-.partner-card-outer .center-card .social-icons .icon-img {
-    width: 27px;
-}
-
-.partner-card-outer .center-card .btn {
-    color: var(--white);
-    font-size: 14px;
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
-
-.partner-card-outer .center-card .partner-btn-hire {
-    background-color: var(--main-orange);
-}
-
-.partner-card-outer .center-card .partner-btn-refresh {
-    border: 1px solid var(--main-orange);
-    color: var(--main-orange);
-}
-
-.partner-card-outer .center-card .location {
-    color: var(--light-blue);
-}
-
-.partner-card-outer .center-card .center-footer {
-    padding: 10px;
-    background-color: #FFEEDE;
-    border-top: 2px solid var(--main-orange);
-}
-
-.partner-card-outer .center-card .center-footer a {
-    text-decoration: none;
-    color: var(--black);
-}
 
 /* pagination for all pages */
 .pagination-bar .pagination-ul{
@@ -527,8 +434,8 @@
         border: none;
     }
 
-    .partner-card-outer .left-card .left-card-body .slider-content .star-sec .fa,
-    .partner-card-outer .left-card .left-card-body .slider-content .star-sec .star-text {
+    .left-card-body .slider-content .star-sec .fa,
+    .left-card-body .slider-content .star-sec .star-text {
         font-size: 15px;
     }
 }
@@ -538,13 +445,8 @@
         right: 75%;
     }
 
-    /* hire a parner */
-    .partner-card-outer .left-card .left-card-header .left-stars .inner p {
-        font-size: 70%;
-    }
-
-    .partner-card-outer .left-card .left-card-body .slider-content .star-sec .fa,
-    .partner-card-outer .left-card .left-card-body .slider-content .star-sec .star-text {
+     .left-card-body .slider-content .star-sec .fa,
+    .left-card-body .slider-content .star-sec .star-text {
         font-size: 15px;
     }
 }
