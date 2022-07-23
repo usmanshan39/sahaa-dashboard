@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sahaa dashboard</title>
+    <link rel="icon" href="assets/images/favicon.svg">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/leads.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/setting.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/sidebar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/global.css'>
+
+
+
+</head>
+<div id="wrapper">
+    <!-- sidebar section start here -->
+
+
+    <aside class="dashboard-sidebar" id="sidebar-wrapper">
+        <a href="javascript:void(0)" class="sidebar-collaps-btn-inner d-lg-none" id="sidebar-toggle-inner"><i
+                class="fa fa-times" aria-hidden="true"></i></a>
+        <div class="sidebar-inner">
+            <div class="sidebar-header">
+                <img src="assets/images/Logo SVG.svg" class="img-fluid">
+            </div>
+            <div class="sidebar-body">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="assets/images/Dashboard.svg" class="ul-img">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leades.html">
+                            <img src="assets/images/Leads.svg" class="ul-img">
+                            Leads
+                        </a>
+                    </li>
+                    <li>
+                        <a href="closing.html">
+                            <img src="assets/images/Closing.svg" class="ul-img">
+                            Closing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Reviews.svg" class="ul-img">
+                            Reviews
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Reviews.svg" class="ul-img">
+                            Pay per Close
+                        </a>
+                    </li>
+                    <li>
+                        <a href="partner.html">
+                            <img src="assets/images/Saha Partners.svg" class="ul-img">
+                            Refer your Partner
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Dashboard.svg" class="ul-img">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Call.svg" class="ul-img">
+                            Request a Call Back
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <a href="#"><img src="assets/images/Signout.svg" class="footer-img">Log Out</a>
+        </div>
+    </aside>
+
+
+
+    <!-- sidebar section end here -->
+
+    <div id="content-wrapper">
+        <div class="container-fluid p-3">
+            <!-- topbars start -->
+            <div class="body-search-row">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mobile-nav d-lg-none">
+                            <div class="d-flex">
+                                <a href="javascript:void(0)" class="sidebar-collaps-btn-outer d-lg-none  pe-2"
+                                    id="sidebar-toggle">
+                                    <i class="fa fa-bars"></i></a>
+                                <img src="assets/images/Logo white.svg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-0">
+                        <div class="form-group search-field">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <img src="assets/images/search.svg">
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-9 mt-3 mt-md-0">
+                        <div class="float-md-end">
+                            <div class="right">
+                                <img src="assets/images/Notifications.svg" class="not-img">
+                                <span class="light ps-3">Welcome, </span>
+                                <span class="dark pe-2">Store Name</span>
+                                <img src="assets/images/Leads_1.svg" class="store-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="orview-row mt-30">
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-5">
+                        <div class="d-flex align-items-center">
+                            <h4 class="me-2 me-lg-5 m-0">Settins</h4>
+                        </div>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-7">
+                        <div class="d-flex align-items-center float-end">
+                            <h4 class="pe-0 pe-md-3 m-0 light-color">All Time</h4>
+                            <div class="select-box">
+                                <select class="form-select" id="sel2" name="sellist2">
+                                    <option>May 12,22 - May 19,22</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- topbars end -->
+
+            <!-- form section start -->
+
+            <div class="main-form-outer mt-30">
+                <div class="setting">
+                    <div class="table-sec table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Business&nbsp;Details
+                                        <div class="td-relative point-active" id="number1">
+                                            <div class="td-absolute"></div>
+                                            <span>1</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        Company&nbsp;Overview
+                                        <div class="td-relative" id="number2">
+                                            <div class="td-absolute"></div>
+                                            <span>2</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        Business&nbsp;Contact&nbsp;Details
+                                        <div class="td-relative d-none" id="number3">
+                                            <div class="td-absolute"></div>
+                                            <span>3</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        Business&nbsp;Address
+                                        <div class="td-relative d-none" id="number4">
+                                            <div class="td-absolute"></div>
+                                            <span>4</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        Services
+                                        <div class="td-relative d-none" id="number5">
+                                            <div class="td-absolute"></div>
+                                            <span>5</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        SEO
+                                        <div class="td-relative d-none" id="number6">
+                                            <div class="td-absolute"></div>
+                                            <span>6</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        Owner&nbsp;Details
+                                        <div class="td-relative d-none" id="number7">
+                                            <div class="td-absolute"></div>
+                                            <span>7</span>
+                                        </div>
+                                    </th>
+                                    <th>
+                                        Bank&nbsp;Details
+                                        <div class="td-relative d-none" id="number8">
+                                            <div class="td-absolute"></div>
+                                            <span>8</span>
+                                        </div>
+                                    </th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                    <div class="setting-form mt-20">
+                        <form>
+                            <div id="form-one-sec">
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Business Name</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Business Name">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Business Email</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Business Email">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Business Website</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Business Website">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Business Type</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Business Type">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Main Category</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Main Category">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Sub Category</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Sub Category">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Business Logo</label>
+                                            <input class="form-control mt-2" id="formFileSm" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Business Promotion Banner</label>
+                                            <input class="form-control mt-2" id="formFileSm" type="file">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Landline Number</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Landline Number">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <button class="btn btn-reset">Reset</button>
+                                            <button class="btn btn-next btn-lg">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- form section end -->
+        </div>
+
+    </div>
+</div>
+
+
+<!-- views modals -->
+<div class="leads-modal modal fade" id="viewLeadModal" tabindex="-1" aria-labelledby="viewLeadModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="text-center">
+                <h4 class="modal-title">View Closing</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="mb-2">Business Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Type Business Name here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="name" class="mb-2">Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Type Name here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="email" class="mb-2">Email</label>
+                        <input type="text" name="email" class="form-control" placeholder="Type Email here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="mobile" class="mb-2">Mobile Number</label>
+                        <input type="text" name="mobile" class="form-control" placeholder="Type Mobile Number here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="city" class="mb-2">City</label>
+                        <input type="text" name="city" class="form-control" placeholder="Type City here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="name" class="mb-2">Best Time to Call</label>
+                        <input type="time" name="time" class="form-control" placeholder="Choose Time to call..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="interest" class="mb-2">Interests</label>
+                        <input type="text" name="interest" class="form-control" placeholder="Type Interests here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="comment" class="mb-2">Comment Box</label>
+                        <textarea class="form-control" placeholder="Type your Comment here.." rows="4"></textarea>
+                    </div>
+                    <div class="mt-4 mb-4">
+                        <!-- <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button> -->
+                        <button type="button" class="btn save-btn btn-lg">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- update lead -->
+<div class="leads-modal update-modal modal fade" id="updateLeadModal" tabindex="-1"
+    aria-labelledby="updateLeadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="text-center">
+                <h4 class="modal-title">UPDATE Closing</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group mt-2">
+                    <label for="interest" class="mb-2">Payment Terms</label>
+                    <select class="form-select">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group mt-3">
+                    <label class="control-label mb-2">Upload Receipt</label>
+                    <div class="dropzone-wrapper">
+                        <div class="dropzone-desc">
+                            <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+                            <p class="m-0">Select 1 file or drag here</p>
+                            <button class="btn select-btn mt-1">Select a file</button>
+                        </div>
+                        <input type="file" name="img_logo" class="dropzone">
+                    </div>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="comment" class="mb-2">Comment Box</label>
+                    <textarea class="form-control" placeholder="Type your Comment here.." rows="4"></textarea>
+                </div>
+                <div class="mt-4 mb-4">
+                    <button type="button" class="btn btn-lg save-btn">Update</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src='./assets/js/bootstrap.bundle.min.js'></script>
+<script src="./assets/js/jquery.js"></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js'></script><script  src="./script.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+<script src="./assets//js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.setting .table-sec th {
+    padding: 0 !important;
+    padding-bottom: 15px !important;
+    font-size: 16px;
+}
+
+.setting .table-sec td {
+    border: none;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.td-relative span {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-orange);
+    color: #fff;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.td-relative {
+    position: relative;
+}
+
+.td-absolute {
+    background-color: var(--main-orange);
+    padding: 1px;
+    position: absolute;
+    top: 15px;
+    width: 100%;
+    z-index: 1;
+}
+.point-active.td-relative span,
+.point-active.td-relative .td-absolute{
+    background-color: var(--green) !important;
+}
+
+/* setting form */
+.setting-form label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.setting-form .form-control {
+    padding: 0.675rem 0.75rem;
+}
+.setting-form [type="file"]{
+    position: relative;
+}
+.setting-form [type="file"]::-webkit-file-upload-button {
+    background: var(--main-orange);
+    border: 2px solid var(--main-orange);
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+    outline: none;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    position: absolute;
+    right: 0;
+    opacity: 1;
+  }
+  
+  .setting-form [type="file"]::-webkit-file-upload-button:hover {
+    background-color: var(--main-orange) !important;
+    border: 2px solid var(--main-orange) !important;
+    color: var(--main-orange) !important;
+    opacity: 1;
+  }
+  .setting-form .btn-reset{
+    color: var(--blue);
+    font-weight: 600;
+  }
+  .setting-form .btn-next{
+    background-color: var(--blue);
+    color: var(--white);
+
+  }
