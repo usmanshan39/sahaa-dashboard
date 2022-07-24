@@ -1,3 +1,15 @@
+$(document).ready(function(){
+// for mltiple select
+  var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+  removeItemButton: true,
+  // maxItemCount:3,
+  searchResultLimit:5,
+  renderChoiceLimit:5
+  });
+ 
+ 
+  });
+
 // sidebar
 const $button = document.querySelector('#sidebar-toggle');
 const $wrapper = document.querySelector('#wrapper');

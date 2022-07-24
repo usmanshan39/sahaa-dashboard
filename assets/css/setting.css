@@ -82,9 +82,103 @@
   .setting-form .btn-reset{
     color: var(--blue);
     font-weight: 600;
+    padding: 10px 40px;
   }
   .setting-form .btn-next{
     background-color: var(--blue);
     color: var(--white);
-
+    padding: 10px 40px;
   }
+  .setting-form .btn-previous{
+    border-color:var(--black) ;
+    color: var(--black);
+    padding: 10px 40px;
+  }
+  #css-dropdown
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 300px;
+    height: 42px;
+    margin: 100px auto 0 auto;
+}
+.setting-form  .choices__inner{
+    background-color: #fff !important;
+}
+.setting-form .choices__list--multiple .choices__item{
+    background-color: var(--input-dark-bg) !important;
+    color: var(--input-dark-txt) !important;
+    border: none !important;
+}
+.setting-form .choices__button{
+    filter: invert(90%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%) !important;
+    -webkit-filter: invert(90%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%) !important;
+}
+.setting-form .select-icon{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    font-size: 18px;
+}
+
+.setting-form .dropzone-wrapper {
+    border: 1px solid #ced4da;
+    color: var(--input-dark-txt);
+    ;
+    position: relative;
+    height: 160px;
+}
+.setting-form .dropzone-desc {
+    position: absolute;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 50%;
+    top: 30px;
+    font-size: 16px;
+}
+.setting-form .dropzone,
+.setting-form .dropzone:focus {
+    position: absolute;
+    outline: none !important;
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.setting-form .dropzone-wrapper:hover,
+.setting-form .dropzone-wrapper.dragover {
+    background: #ecf0f5;
+    transition-duration: 0.3s;
+}
+.setting-form .select-btn {
+    background-color: var(--main-orange);
+    color: #fff;
+    font-size: 14px;
+}
+
+.setting-form .select-btn:hover {
+    color: #fff;
+}
+
+@media (max-width:778px){
+    .setting-form .btn-reset{
+        padding: 10px 25px;
+        font-size: 16px;
+      }
+      .setting-form .btn-next{
+        padding: 10px 25px;
+        font-size: 16px;
+      }
+      .setting-form .btn-previous{
+        padding: 10px 25px;
+        font-size: 16px;
+      }
+      .dropzone-wrapper{
+        height: 220px !important;
+      }
+}

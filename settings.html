@@ -14,6 +14,8 @@
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/setting.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/sidebar.css'>
     <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/global.css'>
+    <link rel="stylesheet" href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006288/BBBootstrap/choices.min.css?version=7.0.0">
+<script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006273/BBBootstrap/choices.min.js?version=7.0.0"></script><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
 
 
 
@@ -219,7 +221,7 @@
                     </div>
                     <div class="setting-form mt-20">
                         <form>
-                            <div id="form-one-sec">
+                            <div id="form-one-sec" class="d-none">
                                 <div class="row">
                                     <div class="col-md-6 mt-3">
                                         <div class="form-group">
@@ -282,6 +284,117 @@
                                         <div class="d-flex align-items-center justify-content-between">
                                             <button class="btn btn-reset">Reset</button>
                                             <button class="btn btn-next btn-lg">Next</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="form-sec-two">
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Business Type</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Business Type">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Country Region</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Country Region">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Leader Sip</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Leader Sip">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Total Number of Employ</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Total Number of Employ">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Year Established</label>
+                                            <input type="date" class="form-control mt-2" placeholder="Type Year Established">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group position-relative">
+                                            <label>Main Market</label>
+                                            <select id="choices-multiple-remove-button" placeholder="Select" multiple>
+                                                <option  onclick="filterSelection('Author')">Author</option>
+                                                <option >Multiselect Dropdown</option>
+                                                <option  >Accordions</option>
+                                                <option >Regions</option>
+                                            </select>
+                                            <i class="fa fa-caret-down select-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group position-relative">
+                                            <label>Langages Spoken</label>
+                                            <select id="choices-multiple-remove-button" placeholder="Select" multiple>
+                                                <option  onclick="filterSelection('Author')">Arabic</option>
+                                                <option >Englis</option>
+                                                <option  >Urdu</option>
+                                                <option >Hindi</option>
+                                            </select>
+                                            <i class="fa fa-caret-down select-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group position-relative">
+                                            <label>Accepted Payment / Currency</label>
+                                            <select id="choices-multiple-remove-button" placeholder="Select" multiple>
+                                                <option  onclick="filterSelection('Author')">Author</option>
+                                                <option >1</option>
+                                                <option  >2</option>
+                                                <option >3</option>
+                                            </select>
+                                            <i class="fa fa-caret-down select-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group position-relative">
+                                            <label>Accepted Payment Type</label>
+                                            <select id="choices-multiple-remove-button" placeholder="Select" multiple>
+                                                <option  onclick="filterSelection('Author')">Author</option>
+                                                <option >1</option>
+                                                <option  >2</option>
+                                                <option >3</option>
+                                            </select>
+                                            <i class="fa fa-caret-down select-icon"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Company Overview</label>
+                                            <textarea class="form-control" rows="1" placeholder="Type Company Overview here"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12 mt-3">
+                                        <div class="form-group mt-3">
+                                            <div class="dropzone-wrapper">
+                                                <div class="dropzone-desc">
+                                                    <i class="fa fa-download fa-2x" aria-hidden="true"></i>
+                                                    <p class="m-0">Select 3 Images and 1 Video or drag and drop here</p>
+                                                    <button class="btn select-btn mt-1">Browse</button>
+                                                </div>
+                                                <input type="file" name="img_logo" class="dropzone">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <button class="btn btn-reset">Reset</button>
+                                            <div class="d-flex -flex-wrap">
+                                                <button class="btn btn-previous btn-lg me-2">Pevious</button>
+                                                <button class="btn btn-next btn-lg">Next</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
