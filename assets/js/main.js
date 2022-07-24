@@ -1,14 +1,27 @@
-$(document).ready(function(){
-// for mltiple select
+// settings page
+$(document).ready(function () {
+  // for mltiple select
   var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
-  removeItemButton: true,
-  // maxItemCount:3,
-  searchResultLimit:5,
-  renderChoiceLimit:5
+    removeItemButton: true,
+    // maxItemCount:3,
+    searchResultLimit: 5,
+    renderChoiceLimit: 5
   });
- 
- 
-  });
+});
+// settings page form
+$(".setting-next-btn").on("click", function(e){
+  e.preventDefault();
+  let formHide = $(this).parent().parent().parent().parent().attr("class");
+  let IconClass = $(this).parent().parent().parent().parent().parent().parent().siblings(".table-responsive").find(".point-active").attr("class");
+  if(IconClass == undefined){
+    $(".first_point").addClass("point-active");
+    $(this).parent().parent().parent().parent().parent().parent().siblings(".table-responsive").find(".point-active").parent().next().find(".td-relative").removeClass("d-none");
+  }
+  else{
+    $(this).parent().parent().parent().parent().parent().parent().siblings(".table-responsive").find(".point-active").parent().next().find(".td-relative").addClass("point-active");
+  }
+  console.log(IconClass);
+})
 
 // sidebar
 const $button = document.querySelector('#sidebar-toggle');
@@ -27,9 +40,9 @@ $buttonb.addEventListener('click', (e) => {
 
 
 // for leads button display when click on dots
-$(".dots-btn").on("click", function(e){
+$(".dots-btn").on("click", function (e) {
   e.preventDefault();
-  let children =  $(this).siblings(".action-col").toggleClass("d-none");
+  let children = $(this).siblings(".action-col").toggleClass("d-none");
 });
 
 
@@ -39,7 +52,7 @@ function readFile(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
 
-    reader.onload = function(e) {
+    reader.onload = function (e) {
       var htmlPreview =
         '<img width="200" src="' + e.target.result + '" />' +
         '<p>' + input.files[0].name + '</p>';
@@ -60,17 +73,17 @@ function reset(e) {
   e.unwrap();
 }
 
-$(".dropzone").change(function() {
+$(".dropzone").change(function () {
   readFile(this);
 });
 
-$('.dropzone-wrapper').on('dragover', function(e) {
+$('.dropzone-wrapper').on('dragover', function (e) {
   e.preventDefault();
   e.stopPropagation();
   $(this).addClass('dragover');
 });
 
-$('.dropzone-wrapper').on('dragleave', function(e) {
+$('.dropzone-wrapper').on('dragleave', function (e) {
   e.preventDefault();
   e.stopPropagation();
   $(this).removeClass('dragover');
@@ -86,15 +99,13 @@ $('.dropzone-wrapper').on('dragleave', function(e) {
 const imgPath = "D:/fiverr/sahaa-dashboard/assets/images";
 const data = {
   labels: ['Calls', 'Email', 'Messenger', 'Whatsapp', 'Website'],
-  datasets: [
-    {
+  datasets: [{
     barThickness: 35,
     label: 'Week of May 13, 2022 Clicks',
-    data: [100, 350, 50, 300 , 400],
-    backgroundColor: ['#d07503', '#FA254C', '#8C2BFC', '#25C966' ,'#2479FF'],
+    data: [100, 350, 50, 300, 400],
+    backgroundColor: ['#d07503', '#FA254C', '#8C2BFC', '#25C966', '#2479FF'],
     borderWidth: 1
-  }
-]
+  }]
 };
 
 // config 
@@ -105,33 +116,32 @@ const config = {
     plugins: {
       labels: {
         render: 'image',
-        images: [
+        images: [{
+            src: imgPath + "/Call - Color.svg",
+            width: 25,
+            height: 25
+          },
           {
-          src: imgPath + "/Call - Color.svg",
-          width: 25,
-          height: 25
-        },
-        {
-          src: imgPath + "/Email - Color.svg",
-          width: 25,
-          height: 25
-        },
-        {
-          src: imgPath + "/Messenger - Color.svg",
-          width: 25,
-          height: 25
-        },
-        {
-          src: imgPath + "/Whatsapp - Color.svg",
-          width: 25,
-          height: 25
-        },
-        {
-          src: imgPath + "/Website - Color.svg",
-          width: 25,
-          height: 25
-        }
-      ]
+            src: imgPath + "/Email - Color.svg",
+            width: 25,
+            height: 25
+          },
+          {
+            src: imgPath + "/Messenger - Color.svg",
+            width: 25,
+            height: 25
+          },
+          {
+            src: imgPath + "/Whatsapp - Color.svg",
+            width: 25,
+            height: 25
+          },
+          {
+            src: imgPath + "/Website - Color.svg",
+            width: 25,
+            height: 25
+          }
+        ]
       }
     },
 
@@ -151,65 +161,63 @@ Analytic activity Chart
 var activity = document.getElementById('activity');
 
 var chart = new Chart(activity, {
-    // The type of chart we want to create
-    type: 'line',
-    
-    // The data for our dataset
-    data: {
-        labels: ["May 12, 2022", "May 15, 2022", 'Aug 20, 2022'],
-        datasets: [
-        {
-          label: "",
-          backgroundColor: 'transparent',
-          borderColor: '#2479FF',
-          data: [0, 65, 52, 115, 98, 165, 125],
-          lineTension: 0,
-          pointRadius: 4,
-          pointBackgroundColor: 'rgba(255,255,255,1)',
-          pointHoverBackgroundColor: 'rgba(255,255,255,0.6)',
-          pointHoverRadius: 8,
-          pointHitRadius: 30,
-          pointBorderWidth: 2,
-          pointStyle: 'rectRounded'
-        },
-          {
-          label: "",
-          backgroundColor: 'transparent',
-          borderColor: '#FA254C',
-          data: [45, 38, 100, 87, 152, 187, 85],
-          lineTension: 0,
-          pointRadius: 4,
-          pointBackgroundColor: 'rgba(255,255,255,0)',
-          pointHoverBackgroundColor: 'rgba(255,255,255,0.6)',
-          pointHoverRadius: 8,
-          pointHitRadius: 30,
-          pointBorderWidth: .3,
-          pointStyle: 'rectRounded'
-        }
-      ]
+  // The type of chart we want to create
+  type: 'line',
+
+  // The data for our dataset
+  data: {
+    labels: ["May 12, 2022", "May 15, 2022", 'Aug 20, 2022'],
+    datasets: [{
+        label: "",
+        backgroundColor: 'transparent',
+        borderColor: '#2479FF',
+        data: [0, 65, 52, 115, 98, 165, 125],
+        lineTension: 0,
+        pointRadius: 4,
+        pointBackgroundColor: 'rgba(255,255,255,1)',
+        pointHoverBackgroundColor: 'rgba(255,255,255,0.6)',
+        pointHoverRadius: 8,
+        pointHitRadius: 30,
+        pointBorderWidth: 2,
+        pointStyle: 'rectRounded'
+      },
+      {
+        label: "",
+        backgroundColor: 'transparent',
+        borderColor: '#FA254C',
+        data: [45, 38, 100, 87, 152, 187, 85],
+        lineTension: 0,
+        pointRadius: 4,
+        pointBackgroundColor: 'rgba(255,255,255,0)',
+        pointHoverBackgroundColor: 'rgba(255,255,255,0.6)',
+        pointHoverRadius: 8,
+        pointHitRadius: 30,
+        pointBorderWidth: .3,
+        pointStyle: 'rectRounded'
+      }
+    ]
+  },
+
+  // Configuration options go here
+  options: {
+    legend: {
+      display: false
     },
-    
-    // Configuration options go here
-    options: {
-      legend: {
-         display: false
-       },
-      scales: {
-        xAxes: [{
-          gridLines: {
-            display:false
-          }
-        }],
-        yAxes: [{
-          gridLines: {
-             display:true
-          },
-       ticks: {
-           
-          },
-       }]
-     },
-     tooltips: {
-    }
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          display: true
+        },
+        ticks: {
+
+        },
+      }]
+    },
+    tooltips: {}
   }
 });

@@ -161,14 +161,14 @@
                                 <tr>
                                     <th>
                                         Business&nbsp;Details
-                                        <div class="td-relative point-active" id="number1">
+                                        <div class="td-relative first_point" id="number1">
                                             <div class="td-absolute"></div>
                                             <span>1</span>
                                         </div>
                                     </th>
                                     <th>
                                         Company&nbsp;Overview
-                                        <div class="td-relative" id="number2">
+                                        <div class="td-relative d-none" id="number2">
                                             <div class="td-absolute"></div>
                                             <span>2</span>
                                         </div>
@@ -221,7 +221,7 @@
                     </div>
                     <div class="setting-form mt-20">
                         <form>
-                            <div id="form-one-sec" class="d-none">
+                            <div id="form-one-sec" class="form-hide-sec">
                                 <div class="row">
                                     <div class="col-md-6 mt-3">
                                         <div class="form-group">
@@ -283,12 +283,12 @@
                                     <div class="col-md-12">
                                         <div class="d-flex align-items-center justify-content-between">
                                             <button class="btn btn-reset">Reset</button>
-                                            <button class="btn btn-next btn-lg">Next</button>
+                                            <button class="btn btn-next btn-lg setting-next-btn">Next</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div id="form-sec-two">
+                            <div id="form-sec-two" class="d-none form-hide-sec">
                                 <div class="row">
                                     <div class="col-md-6 mt-3">
                                         <div class="form-group">
@@ -387,13 +387,381 @@
                                         </div>
                                     </div>
                                 </div>
+                                <hr>
                                 <div class="row">
                                     <div class="col-md-12">
                                         <div class="d-flex flex-wrap align-items-center justify-content-between">
                                             <button class="btn btn-reset">Reset</button>
                                             <div class="d-flex -flex-wrap">
                                                 <button class="btn btn-previous btn-lg me-2">Pevious</button>
-                                                <button class="btn btn-next btn-lg">Next</button>
+                                                <button class="btn btn-next btn-lg setting-next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="form-sec-three" class="d-none form-hide-sec">
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Call Us</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Call Us Number here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Messenger Us</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Messenger Us Nummber here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Whatsapp Us</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Whatsapp Us Number here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Emails Us</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Emails here">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <button class="btn btn-reset">Reset</button>
+                                            <div class="d-flex -flex-wrap">
+                                                <button class="btn btn-previous btn-lg me-2">Pevious</button>
+                                                <button class="btn btn-next btn-lg setting-next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="form-sec-four" class="d-none form-hide-sec">
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Office</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Office Number here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Floor</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Floor Number here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Building</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Building Number here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Street</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Street Number here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label for="interest" class="mb-2">Country</label>
+                                            <select class="form-select">
+                                                <option disabled selected>Select Country</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label for="interest" class="mb-2">City</label>
+                                            <select class="form-select">
+                                                <option disabled selected>Select City</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label for="interest" class="mb-2">Area</label>
+                                            <select class="form-select">
+                                                <option disabled selected>Select Area</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <button class="btn btn-reset">Reset</button>
+                                            <div class="d-flex -flex-wrap">
+                                                <button class="btn btn-previous btn-lg me-2">Pevious</button>
+                                                <button class="btn btn-next btn-lg setting-next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="form-sec-five" class="d-none form-hide-sec">
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Service #1</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Service #1 here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Service #2</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Service #2 here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Service #3</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Service #3 here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Service #4</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Service #4 here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Service #5</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Service #5 here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Service #6</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Service #6 here">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <button class="btn btn-reset">Reset</button>
+                                            <div class="d-flex -flex-wrap">
+                                                <button class="btn btn-previous btn-lg me-2">Pevious</button>
+                                                <button class="btn btn-next btn-lg setting-next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="form-sec-six" class="d-none form-hide-sec">
+                                <div class="row">
+                                    <div class="col-md-12 mt-3">
+                                        <div class="form-group">
+                                            <label>Meta Title (Max 50)</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Meta Title here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Title Formate</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Title Formate here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group mb-0">
+                                            <label for="interest" class="mb-2">Select Title Formate</label>
+                                        </div>
+                                        <div class="row gx-1 mt-2">
+                                            <div class="col-4 col-md-2 p-0 pr-1">
+                                                <div class="form-group mt-md-0">
+                                                    <select class="form-select">
+                                                        <option selected disabled>None</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 col-md-2 p-0 pr-1">
+                                                <div class="form-group mt-md-0">
+                                                    <select class="form-select">
+                                                        <option selected disabled>None</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 col-md-2 p-0 pr-1">
+                                                <div class="form-group mt-md-0">
+                                                    <select class="form-select">
+                                                        <option selected disabled>None</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 col-md-2 p-0 pr-1">
+                                                <div class="form-group mt-md-0">
+                                                    <select class="form-select">
+                                                        <option selected disabled>None</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 col-md-2 p-0 pr-1">
+                                                <div class="form-group mt-md-0">
+                                                    <select class="form-select">
+                                                        <option selected disabled>None</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 col-md-2 p-0 pr-1">
+                                                <div class="form-group mt-md-0">
+                                                    <select class="form-select">
+                                                        <option selected disabled>None</option>
+                                                        <option>2</option>
+                                                        <option>3</option>
+                                                        <option>4</option>
+                                                        <option>5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Meta Description (Max 250)</label>
+                                            <textarea class="form-control" placeholder="Enter Meta Description here" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Meta Keywords (One, Two, Three)</label>
+                                            <textarea class="form-control" placeholder="Enter Meta Keywords here" rows="4"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <button class="btn btn-reset">Reset</button>
+                                            <div class="d-flex -flex-wrap">
+                                                <button class="btn btn-previous btn-lg me-2">Pevious</button>
+                                                <button class="btn btn-next btn-lg setting-next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="form-sec-seven" class="d-none form-hide-sec">
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Owner Name</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Owner Name here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Owner Email Id</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Owner Email Id here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Owner Mobile Number</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Owner Mobile Number here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Owner Linkdin Account</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Owner Linkdin Account URL here">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <button class="btn btn-reset">Reset</button>
+                                            <div class="d-flex -flex-wrap">
+                                                <button class="btn btn-previous btn-lg me-2">Pevious</button>
+                                                <button class="btn btn-next btn-lg setting-next-btn">Next</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="form-sec-eight" class="d-none form-hide-sec">
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Account Title</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Account Title here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Account Number</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Account Number here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>IBAN Number</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type IBAN Number here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Branch Code</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Branch Code URL here">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                        <div class="form-group">
+                                            <label>Bank Name</label>
+                                            <input type="text" class="form-control mt-2" placeholder="Type Bank Name URL here">
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                            <button class="btn btn-reset">Reset</button>
+                                            <div class="d-flex -flex-wrap">
+                                                <button class="btn btn-previous btn-lg me-2">Pevious</button>
+                                                <button class="btn btn-next btn-lg setting-next-btn">Next</button>
                                             </div>
                                         </div>
                                     </div>
