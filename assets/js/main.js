@@ -9,19 +9,146 @@ $(document).ready(function () {
   });
 });
 // settings page form
-$(".setting-next-btn").on("click", function(e){
+// $(".setting-next-btn").on("click", function(e){
+//   e.preventDefault();
+//   let formHide = $(this).parent().parent().parent().parent().attr("class");
+//   let IconClass = $(this).parent().parent().parent().parent().parent().parent().siblings(".table-responsive").find(".point-active").attr("class");
+//   if(IconClass == undefined){
+//     $(".first_point").addClass("point-active");
+//     $(this).parent().parent().parent().parent().parent().parent().siblings(".table-responsive").find(".point-active").parent().next().find(".td-relative").removeClass("d-none");
+//   }
+//   else{
+//     $(this).parent().parent().parent().parent().parent().parent().siblings(".table-responsive").find(".point-active").parent().next().find(".td-relative").addClass("point-active");
+//   }
+//   console.log(IconClass);
+// })
+
+$("#form-sec-one-next").on("click", function(e){
   e.preventDefault();
-  let formHide = $(this).parent().parent().parent().parent().attr("class");
-  let IconClass = $(this).parent().parent().parent().parent().parent().parent().siblings(".table-responsive").find(".point-active").attr("class");
-  if(IconClass == undefined){
-    $(".first_point").addClass("point-active");
-    $(this).parent().parent().parent().parent().parent().parent().siblings(".table-responsive").find(".point-active").parent().next().find(".td-relative").removeClass("d-none");
-  }
-  else{
-    $(this).parent().parent().parent().parent().parent().parent().siblings(".table-responsive").find(".point-active").parent().next().find(".td-relative").addClass("point-active");
-  }
-  console.log(IconClass);
+  $("#number1").addClass("point-active");
+  $("#number2").removeClass("d-none");
+  $("#form-one-sec").addClass("d-none");
+  $("#form-sec-two").removeClass("d-none");
+});
+$("#form-sec-two-next").on("click", function(e){
+  e.preventDefault();
+  $("#number2").addClass("point-active");
+  $("#number3").removeClass("d-none");
+  $("#form-sec-two").addClass("d-none");
+  $("#form-sec-three").removeClass("d-none");
+});
+$("#form-sec-three-next").on("click", function(e){
+  e.preventDefault();
+  $("#number3").addClass("point-active");
+  $("#number4").removeClass("d-none");
+  $("#form-sec-three").addClass("d-none");
+  $("#form-sec-four").removeClass("d-none");
+});
+$("#form-sec-four-next").on("click", function(e){
+  e.preventDefault();
+  $("#number4").addClass("point-active");
+  $("#number5").removeClass("d-none");
+  $("#form-sec-four").addClass("d-none");
+  $("#form-sec-five").removeClass("d-none");
+});
+$("#form-sec-five-next").on("click", function(e){
+  e.preventDefault();
+  $("#number5").addClass("point-active");
+  $("#number6").removeClass("d-none");
+  $("#form-sec-five").addClass("d-none");
+  $("#form-sec-six").removeClass("d-none");
+});
+$("#form-sec-six-next").on("click", function(e){
+  e.preventDefault();
+  $("#number6").addClass("point-active");
+  $("#number7").removeClass("d-none");
+  $("#form-sec-six").addClass("d-none");
+  $("#form-sec-seven").removeClass("d-none");
+});
+$("#form-sec-seven-next").on("click", function(e){
+  e.preventDefault();
+  $("#number7").addClass("point-active");
+  $("#number8").removeClass("d-none");
+  $("#form-sec-seven").addClass("d-none");
+  $("#form-sec-eight").removeClass("d-none");
+});
+$("#form-sec-eight-next").on("click", function(e){
+  e.preventDefault();
+  $("#number8").addClass("point-active");
+  // $("#number2").removeClass("d-none");
+});
+$("#form-sec-two-pre").on("click", function(e){
+  e.preventDefault();
+  $("#number1").removeClass("point-active");
+  $("#number2").addClass("d-none");
+  $("#form-one-sec").removeClass("d-none");
+  $("#form-sec-two").addClass("d-none");
+});
+$("#form-sec-three-pre").on("click", function(e){
+  e.preventDefault();
+  $("#number2").removeClass("point-active");
+  $("#number3").addClass("d-none");
+  $("#form-sec-two").removeClass("d-none");
+  $("#form-sec-three").addClass("d-none");
+});
+$("#form-sec-four-pre").on("click", function(e){
+  e.preventDefault();
+  $("#number3").removeClass("point-active");
+  $("#number4").addClass("d-none");
+  $("#form-sec-three").removeClass("d-none");
+  $("#form-sec-four").addClass("d-none");
+});
+$("#form-sec-five-pre").on("click", function(e){
+  e.preventDefault();
+  $("#number4").removeClass("point-active");
+  $("#number5").addClass("d-none");
+  $("#form-sec-four").removeClass("d-none");
+  $("#form-sec-five").addClass("d-none");
+});
+$("#form-sec-six-pre").on("click", function(e){
+  e.preventDefault();
+  $("#number5").removeClass("point-active");
+  $("#number6").addClass("d-none");
+  $("#form-sec-five").removeClass("d-none");
+  $("#form-sec-six").addClass("d-none");
+});
+$("#form-sec-seven-pre").on("click", function(e){
+  e.preventDefault();
+  $("#number6").removeClass("point-active");
+  $("#number7").addClass("d-none");
+  $("#form-sec-six").removeClass("d-none");
+  $("#form-sec-seven").addClass("d-none");
+});
+$("#form-sec-eight-pre").on("click", function(e){
+  e.preventDefault();
+  $("#number7").removeClass("point-active");
+  $("#number8").addClass("d-none");
+  $("#form-sec-seven").removeClass("d-none");
+  $("#form-sec-eight").addClass("d-none");
+});
+
+$(".btn-reset").on("click", function(e){
+  e.preventDefault();
+  $("#number1").removeClass("point-active");
+  $("#number2").addClass("d-none");
+  $("#number3").addClass("d-none");
+  $("#number4").addClass("d-none");
+  $("#number5").addClass("d-none");
+  $("#number6").addClass("d-none");
+  $("#number7").addClass("d-none");
+  $("#number8").addClass("d-none");
+  $("#form-one-sec").removeClass("d-none");
+  $("#form-sec-two").addClass("d-none");
+  $("#form-sec-three").addClass("d-none");
+  $("#form-sec-four").addClass("d-none");
+  $("#form-sec-five").addClass("d-none");
+  $("#form-sec-six").addClass("d-none");
+  $("#form-sec-seven").addClass("d-none");
+  $("#form-sec-eight").addClass("d-none");
+  $("#setting-form").trigger("reset");;
+
 })
+
 
 // sidebar
 const $button = document.querySelector('#sidebar-toggle');
