@@ -80,7 +80,9 @@
     font-size: 15px;
     font-weight: 500;
 }
-
+.text-14{
+    font-size: 14px;
+}
 .active-btn {
     border: 1px solid var(--main-orange);
     color: var(--main-orange);
