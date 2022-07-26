@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sahaa dashboard</title>
+    <link rel="icon" href="assets/images/favicon.svg">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/leads.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/sidebar.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/css/global.css'>
+
+
+
+</head>
+<div id="wrapper">
+    <!-- sidebar section start here -->
+
+
+    <aside class="dashboard-sidebar" id="sidebar-wrapper">
+        <a href="javascript:void(0)" class="sidebar-collaps-btn-inner d-lg-none" id="sidebar-toggle-inner"><i
+                class="fa fa-times" aria-hidden="true"></i></a>
+        <div class="sidebar-inner">
+            <div class="sidebar-header">
+                <a href="index.html">
+                    <img src="assets/images/Logo SVG.svg" class="img-fluid">
+                </a>
+            </div>
+            <div class="sidebar-body">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="assets/images/Dashboard.svg" class="ul-img">
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="leades.html">
+                            <img src="assets/images/Leads.svg" class="ul-img">
+                            Leads
+                        </a>
+                    </li>
+                    <li>
+                        <a href="closing.html">
+                            <img src="assets/images/Closing.svg" class="ul-img">
+                            Closing
+                        </a>
+                    </li>
+                    <li>
+                        <a href="reviews.html">
+                            <img src="assets/images/Reviews.svg" class="ul-img">
+                            Reviews
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Reviews.svg" class="ul-img">
+                            Pay per Close
+                        </a>
+                    </li>
+                    <li>
+                        <a href="partner.html">
+                            <img src="assets/images/Saha Partners.svg" class="ul-img">
+                            Refer your Partner
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <img src="assets/images/Dashboard.svg" class="ul-img">
+                            Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Call.svg" class="ul-img">
+                            Request a Call Back
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar-footer">
+            <a href="#"><img src="assets/images/Signout.svg" class="footer-img">Log Out</a>
+        </div>
+    </aside>
+
+
+
+    <!-- sidebar section end here -->
+
+    <div id="content-wrapper">
+        <div class="container-fluid p-3">
+            <!-- topbars start -->
+            <div class="body-search-row">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="mobile-nav d-lg-none">
+                            <div class="d-flex">
+                                <a href="javascript:void(0)" class="sidebar-collaps-btn-outer d-lg-none  pe-2"
+                                    id="sidebar-toggle">
+                                    <i class="fa fa-bars"></i></a>
+                                <img src="assets/images/Logo white.svg" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-3 mt-3 mt-md-0">
+                       <h4>Sahaa Support</h4>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-9 mt-3 mt-md-0">
+                        <div class="float-md-end">
+                            <div class="right">
+                                <img src="assets/images/Notifications.svg" class="not-img">
+                                <span class="light ps-3">Welcome, </span>
+                                <span class="dark pe-2">Store Name</span>
+                                <img src="assets/images/Leads_1.svg" class="store-logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- topbars end -->
+
+            <!-- form section start -->
+
+            <div class="main-form-outer mt-30">
+                <h2>Project Details</h2>
+                <p>You can share your project details here <span class="alert alert-danger">usmanshan39@gmail.com</span></p>
+                <p>or here here <i class="fa fa-whatsapp"></i> <span class="alert alert-danger">+923087620003</span></p>
+            </div>
+
+            <!-- form section end -->
+        </div>
+
+    </div>
+</div>
+
+
+<!-- views modals -->
+<div class="leads-modal modal fade" id="viewLeadModal" tabindex="-1" aria-labelledby="viewLeadModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="text-center">
+                <h4 class="modal-title">View Lead</h3>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="name" class="mb-2">Business Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Type Business Name here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="name" class="mb-2">Name</label>
+                        <input type="text" name="name" class="form-control" placeholder="Type Name here..">
+                    </div>
+                    <div class="select-box mt-2">
+                        <label for="name" class="mb-2">select</label>
+                        <select class="form-select" id="sel2" name="sellist2">
+                            <option>sahaa.me</option>
+                            <option>sahaa partner</option>
+                            <option>sahaa consaltant</option>
+                        </select>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="email" class="mb-2">Email</label>
+                        <input type="text" name="email" class="form-control" placeholder="Type Email here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="mobile" class="mb-2">Mobile Number</label>
+                        <input type="text" name="mobile" class="form-control" placeholder="Type Mobile Number here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="city" class="mb-2">City</label>
+                        <input type="text" name="city" class="form-control" placeholder="Type City here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="name" class="mb-2">Best Time to Call</label>
+                        <input type="time" name="time" class="form-control" placeholder="Choose Time to call..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="interest" class="mb-2">Interests</label>
+                        <input type="text" name="interest" class="form-control" placeholder="Type Interests here..">
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="comment" class="mb-2">Comment Box</label>
+                        <textarea class="form-control" placeholder="Type your Comment here.." rows="4"></textarea>
+                    </div>
+                    <div class="mt-4 mb-4">
+                        <!-- <button type="button" class="btn close-btn" data-bs-dismiss="modal">Close</button> -->
+                        <button type="button" class="btn save-btn btn-lg">Save</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- update lead -->
+<div class="leads-modal modal fade" id="updateLeadModal" tabindex="-1" aria-labelledby="updateLeadModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="text-center">
+                <h4 class="modal-title">UPDATE LEAD</h3>
+            </div>
+            <div class="modal-body">
+                <div class="form-group mt-2">
+                    <label for="interest" class="mb-2">Status</label>
+                    <select class="form-select">
+                        <option>Not Interested</option>
+                        <option>Under Process</option>
+                        <option>Close</option>
+                    </select>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="comment" class="mb-2">Comment Box</label>
+                    <textarea class="form-control" placeholder="Type your Comment here.." rows="4"></textarea>
+                </div>
+                <div class="mt-4 mb-4">
+                    <button type="button" class="btn btn-lg save-btn">Update</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src='./assets/js/bootstrap.bundle.min.js'></script>
+<script src="./assets/js/jquery.js"></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.2.2/Chart.min.js'></script><script  src="./script.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/chart.js-plugin-labels-dv/dist/chartjs-plugin-labels.min.js"></script>
+<script src="./assets//js/main.js"></script>
+</body>
+
+</html>
