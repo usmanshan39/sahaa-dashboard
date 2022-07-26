@@ -75,6 +75,13 @@ $("#form-sec-seven-next").on("click", function(e){
 $("#form-sec-eight-next").on("click", function(e){
   e.preventDefault();
   $("#number8").addClass("point-active");
+  $("#number9").removeClass("d-none");
+  $("#form-sec-eight").addClass("d-none");
+  $("#form-sec-nine").removeClass("d-none");
+});
+$("#form-sec-nine-next").on("click", function(e){
+  e.preventDefault();
+  $("#number9").addClass("point-active");
   // $("#number2").removeClass("d-none");
 });
 $("#form-sec-two-pre").on("click", function(e){
@@ -125,6 +132,13 @@ $("#form-sec-eight-pre").on("click", function(e){
   $("#number8").addClass("d-none");
   $("#form-sec-seven").removeClass("d-none");
   $("#form-sec-eight").addClass("d-none");
+});
+$("#form-sec-nine-pre").on("click", function(e){
+  e.preventDefault();
+  $("#number8").removeClass("point-active");
+  $("#number9").addClass("d-none");
+  $("#form-sec-eight").removeClass("d-none");
+  $("#form-sec-nine").addClass("d-none");
 });
 
 $(".btn-reset").on("click", function(e){
