@@ -2,16 +2,19 @@
 .body-search-row{
     margin-top: 20px;
 }
-.body-search-row .search-field{
+.body-search-row .search-field,
+.support-sec .search-field{
     position: relative;
 }
-.body-search-row .search-field img{
+.body-search-row .search-field img,
+.support-sec .search-field img{
     width: 18px;
     position: absolute;
     right: 18px;
     top: 10px;
 }
-.body-search-row .search-field .form-control{
+.body-search-row .search-field .form-control,
+.support-sec .search-field .form-control{
     background-color: var(--input-dark-bg);
     color: var(--input-dark-txt);
     border-radius: 20px;
@@ -156,13 +159,34 @@
     -o-border-radius: 10px;
 }
 
-/* partner page */
-
+/* sahaa support  page */
+.support-sec .popular-topics .card{
+    padding:15px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.support-sec .popular-topics .card .topic-img{
+    width: 70px;
+}
+.support-sec .popular-topics .card p{
+    /* margin-top: 20px; */
+    font-size: 20px;
+    font-weight: 400;
+}
 
 @media (max-width:768px){
     .orview-row h4.light-color{
         width: 100px;
         font-size: 14px;
+    }
+    /* sahaa support page */
+    .support-sec .support-top h4{
+        font-size: 18px;
+    }
+    .support-sec .popular-topics .card p{
+        font-size: 27px;
     }
 }
 
@@ -200,12 +224,20 @@
         min-width: 120px;
         max-width: 120px;
     }
+    /* saha support page */
+    .support-sec .popular-topics .card p{
+        font-size: 24px;
+    }
 }
 @media (min-width:1700px){
     /* reaches clicks cards */
     .main-body .reaches-row .card-main .card{
         min-width: 140px;
         max-width: 140px;
+    }
+    /* saha support page */
+    .support-sec .popular-topics .card p{
+        font-size: 27px;
     }
 }
 
