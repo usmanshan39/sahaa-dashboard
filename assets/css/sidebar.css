@@ -130,7 +130,7 @@
     width: 180px;
 }
 .sidebar-inner .sidebar-body {
-    margin-top: 70px;
+    margin-top: 30px;
     padding: 0px 30px;
 }
 .sidebar-inner .sidebar-body ul{
@@ -138,22 +138,22 @@
     padding-left: 0;
 }
 .sidebar-inner .sidebar-body ul li{
-    padding: 15px 0px;
+    padding: 12px 0px;
 }
 .sidebar-inner .sidebar-body ul li a,
 .sidebar-footer a{
     text-decoration: none;
     color: var(--white);
-    font-size: 17px;
+    font-size: 16px;
 }
 .sidebar-inner .sidebar-body ul .ul-img,
 .sidebar-footer .footer-img{
-    width: 25px;
+    width: 24px;
     margin-right: 10px;
 }
 
 .sidebar-footer{
     border-top: 1px solid var(--white);
     padding: 15px 30px;
-    margin-top: 50px;
+    margin-top: 30px;
 }

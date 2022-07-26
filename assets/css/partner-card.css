@@ -10,6 +10,7 @@
 }
 .hire-partner-btn:hover{
     color: var(--white);
+    background-color: var(--main-orange);
 }
 .refer-partner-btn{
     border: 1px solid var(--main-orange);
@@ -529,9 +530,3 @@
 
 
 }
-
-@media (max-width : 1600px) and (max-height : 900px){
-    
-}
-
-@media (max-width : 1280px) and (max-height : 800px) 
